@@ -172,6 +172,12 @@
 .icon-user:before {
     content: "\f007";
 }
+.icon-home:before {
+    content: "\f015";
+}
+.icon-comment:before {
+    content: "\f075";
+}
 .icon-heart-o:before {
     content: "\f08a";
 }
@@ -180,6 +186,9 @@
 }
 .icon-link:before {
     content: "\f0c1";
+}
+.icon-location-arrow:before {
+    content: "\f124";
 }
 .icon-youtube-play:before {
     content: "\f16a";
@@ -208,9 +217,15 @@
 .icon-user-times:before {
     content: "\f235";
 }
+.icon-user-circle:before {
+    content: "\f2bd";
+}
+.icon-user-circle-o:before {
+    content: "\f2be";
+}
 .icon-telegram:before {
     content: "\f2c6";
 }
-.icon-comment:before {
-    content: "\f075";
+.icon-newspaper:before {
+    content: "\e904";
 }
