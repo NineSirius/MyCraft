@@ -3,7 +3,7 @@ body.dark {
 }
 
 body.dark .main {
-    background: #444;
+    background: #333;
     color: #fff;
 }
 
@@ -14,4 +14,8 @@ body.dark.title {
 
 body.dark a {
     color: #fff;
+}
+
+body.dark .mobile-nav {
+    background: #555;
 }

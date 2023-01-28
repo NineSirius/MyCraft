@@ -70,6 +70,10 @@
         font-size: 20px;
         font-weight: 600;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .grid-item-preview img {
@@ -128,7 +132,7 @@
     }
 }
 @media (max-width: 570px) {
-    .nav {
+    .nav-links:first-child {
         display: none;
     }
 
