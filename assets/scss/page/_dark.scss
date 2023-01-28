@@ -1,0 +1,17 @@
+body.dark {
+    background: #222;
+}
+
+body.dark .main {
+    background: #444;
+    color: #fff;
+}
+
+body.dark .desc,
+body.dark.title {
+    color: #fff;
+}
+
+body.dark a {
+    color: #fff;
+}

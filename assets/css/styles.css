@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold Italic"), local("OpenSans-SemiBoldItalic"), url("../fonts/Open-Sans/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-SemiBoldItalic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("../fonts/Open-Sans/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/Open-Sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-Bold.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../fonts/Open-Sans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-Italic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans ExtraBold Italic"), local("OpenSans-ExtraBoldItalic"), url("../fonts/Open-Sans/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("../fonts/Open-Sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Medium"), local("OpenSans-Medium"), url("../fonts/Open-Sans/OpenSans-Medium.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-Medium.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/Open-Sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-Light.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("../fonts/Open-Sans/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-LightItalic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/Open-Sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-Regular.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Medium Italic"), local("OpenSans-MediumItalic"), url("../fonts/Open-Sans/OpenSans-MediumItalic.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-MediumItalic.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/Open-Sans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/Open-Sans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons/icomoon.eot?lentop");
+  src: url("../fonts/icons/icomoon.eot?lentop#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?lentop") format("truetype"), url("../fonts/icons/icomoon.woff?lentop") format("woff"), url("../fonts/icons/icomoon.svg?lentop#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\f004";
+}
+
+.icon-star:before {
+  content: "\f005";
+}
+
+.icon-star-o:before {
+  content: "\f006";
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+
+.icon-heart-o:before {
+  content: "\f08a";
+}
+
+.icon-chain:before {
+  content: "\f0c1";
+}
+
+.icon-link:before {
+  content: "\f0c1";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-apple:before {
+  content: "\f179";
+}
+
+.icon-windows:before {
+  content: "\f17a";
+}
+
+.icon-android:before {
+  content: "\f17b";
+}
+
+.icon-spotify:before {
+  content: "\f1bc";
+}
+
+.icon-paper-plane:before {
+  content: "\f1d8";
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+
+.icon-user-plus:before {
+  content: "\f234";
+}
+
+.icon-user-times:before {
+  content: "\f235";
+}
+
+.icon-telegram:before {
+  content: "\f2c6";
+}
+
+.icon-comment:before {
+  content: "\f075";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #30ffff;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.m-1 {
+  margin: 10px 0;
+}
+
+.desc {
+  color: #444;
+}
+
+body.dark {
+  background: #222;
+}
+
+body.dark .main {
+  background: #444;
+  color: #fff;
+}
+
+body.dark .desc,
+body.dark.title {
+  color: #fff;
+}
+
+body.dark a {
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  padding: 50px 0;
+}
+.header-title {
+  font-weight: 700;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.main {
+  background: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid #d8d8d8;
+  border-radius: 2px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-link-wrap {
+  overflow: hidden;
+}
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  padding: 5px 16px;
+  font-size: 16px;
+  background: var(--primary-color);
+  border: unset;
+}
+.nav-link span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+  height: 3px;
+  background: #333;
+  transform: translateY(50%);
+  transition: 0.2s;
+  opacity: 0;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+.nav-link:hover span {
+  opacity: 1;
+  transform: translateY(-60%);
+}
+
+.main-section {
+  padding: 0 25px;
+}
+
+.section-title {
+  margin: 15px 0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  padding: 10px;
+  border-radius: 10px;
+}
+.grid-item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.grid-item-preview img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.grid-item-content {
+  padding: 10px;
+}
+
+.grid-item-info {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+}
+.grid-item-info .date {
+  margin-left: auto;
+}
+
+.grid-item-info {
+  color: #b6b6b6;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=styles.css.map */
