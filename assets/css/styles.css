@@ -244,30 +244,37 @@ a {
 }
 
 body.dark {
-  background: #222;
+  background: #191919;
 }
 
 body.dark .main {
-  background: #333;
-  color: #fff;
+  background: #2c2d2f;
+  color: #e1e3e6;
 }
 
 body.dark .desc,
 body.dark.title {
-  color: #fff;
+  color: #e1e3e6 !important;
 }
 
 body.dark a {
-  color: #fff;
+  color: #e1e3e6;
 }
 
 body.dark .mobile-nav {
   background: #555;
 }
 
+body.dark .nav-link {
+  color: #fff;
+}
+
 h2.post-title {
   font-size: 32px;
   margin: 20px 0 0 0;
+  position: relative;
+  z-index: 11;
+  color: #333;
 }
 
 h4.post-title {
@@ -276,14 +283,37 @@ h4.post-title {
 }
 
 .post-info {
+  position: relative;
   display: flex;
   gap: 10px;
   color: #b6b6b6;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgb(139, 139, 139);
+  z-index: 10;
 }
 .post-info .date {
   margin-left: 20px;
+}
+
+.post-preview {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+.post-preview .post-title {
+  color: #fff;
+}
+
+.post-preview:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/posts/minecraft-for-windows.jpg");
+  background-size: cover;
+  filter: brightness(0.5);
 }
 
 .post-content {
@@ -310,6 +340,7 @@ h4.post-title {
   font-weight: 700;
   margin: 20px 0;
   color: #fff;
+  padding: 0 10px;
 }
 
 .modal {
@@ -337,6 +368,7 @@ h4.post-title {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #d8d8d8;
   border-radius: 2px;
 }
@@ -401,6 +433,8 @@ h4.post-title {
 
 .grid-item-preview img {
   width: 100%;
+  max-height: 200px;
+  object-fit: cover;
   display: block;
   border-radius: 10px;
 }
@@ -453,6 +487,9 @@ h4.post-title {
 @media (max-width: 570px) {
   .nav-links:first-child {
     display: none;
+  }
+  .main-section {
+    padding: 0 5px 70px 5px;
   }
   .mobile-nav {
     display: grid !important;

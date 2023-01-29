@@ -1,21 +1,25 @@
 body.dark {
-    background: #222;
+    background: #191919;
 }
 
 body.dark .main {
-    background: #333;
-    color: #fff;
+    background: #2c2d2f;
+    color: #e1e3e6;
 }
 
 body.dark .desc,
 body.dark.title {
-    color: #fff;
+    color: #e1e3e6 !important;
 }
 
 body.dark a {
-    color: #fff;
+    color: #e1e3e6;
 }
 
 body.dark .mobile-nav {
     background: #555;
+}
+
+body.dark .nav-link {
+    color: #fff;
 }
