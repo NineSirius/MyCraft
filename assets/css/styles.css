@@ -243,6 +243,20 @@ a {
   font-weight: 400;
 }
 
+.btn {
+  display: inline-flex;
+  align-self: center;
+  padding: 10px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: #222;
+  color: #fff;
+}
+.btn-download {
+  color: green;
+  background: #222;
+}
+
 body.dark {
   background: #191919;
 }
@@ -258,11 +272,14 @@ body.dark.title {
 }
 
 body.dark a {
-  color: #e1e3e6;
+  color: #0a7324;
 }
 
 body.dark .mobile-nav {
-  background: #555;
+  background: #333;
+}
+body.dark .mobile-nav a {
+  color: #fff;
 }
 
 body.dark .nav-link {
@@ -318,6 +335,7 @@ h4.post-title {
 
 .post-content {
   margin-top: 25px;
+  padding: 15px;
 }
 
 .post-section {
@@ -504,6 +522,7 @@ h4.post-title {
   grid-template-columns: repeat(4, 1fr);
   width: 100vw;
   background: #fff;
+  z-index: 999 !important;
 }
 .mobile-nav-link {
   text-align: center;

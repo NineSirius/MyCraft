@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     background: #30ffff;
 }
 
@@ -42,4 +42,19 @@ a {
 .desc {
     color: #444;
     font-weight: 400;
+}
+
+.btn {
+    display: inline-flex;
+    align-self: center;
+    padding: 10px 32px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: #222;
+    color: #fff;
+
+    &-download {
+        color: green;
+        background: #222;
+    }
 }

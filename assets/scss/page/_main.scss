@@ -157,6 +157,7 @@
     grid-template-columns: repeat(4, 1fr);
     width: 100vw;
     background: #fff;
+    z-index: 999 !important;
 
     &-link {
         text-align: center;
